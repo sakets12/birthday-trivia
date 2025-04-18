@@ -1,13 +1,16 @@
 body {
 	font-family: Arial, sans-serif;
 	text-align: center;
-	background: #f0f0f0;
+	/* Background image settings */
+	background: url('background.jpg') no-repeat center center fixed;
+	background-size: cover;
   }
   
   .container {
 	max-width: 600px;
 	margin: 100px auto;
-	background: #fff;
+	/* Slightly transparent to let the background show through */
+	background: rgba(255, 255, 255, 0.9);
 	padding: 20px;
 	border-radius: 8px;
 	box-shadow: 0 4px 8px rgba(0,0,0,0.1);
