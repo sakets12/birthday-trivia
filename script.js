@@ -2,7 +2,7 @@ const questions = [
 	{ q: 'What piece of clothing is often worn by men at weddings and interviews?', a: 'suit' },
 	{ q: 'Which is your favorite F1 team?', a: 'mclaren' },
 	{ q: 'What wind instrument is often seen in orchestras and once stolen for love?', a: 'french horn' },
-	{ q: 'What do you call a person who looks just like someone else?', a: 'doppelgänger' },
+	{ q: 'What do you call a person who looks just like someone else?', a: 'doppelganger' },
 	{ q: 'What yellow object is essential for rainy days and shows up in many romantic movie scenes?', a: 'umbrella' }
   ];
   
@@ -49,7 +49,7 @@ const questions = [
   function handleFinal() {
 	const ans = answerInput.value.trim().toLowerCase();
 	if (ans === finalAnswer) {
-	  feedbackEl.innerHTML = 'Correct! <a href="party-details.pdf" download>Download your surprise party details here</a>';
+	  feedbackEl.innerHTML = 'Correct! <a href="party-details.pdf" download>Download your offer</a>';
 	} else {
 	  feedbackEl.textContent = 'Hint: It is a sit-com.';
 	}
