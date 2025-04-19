@@ -1,32 +1,52 @@
+/* Import Roboto for a modern look */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body {
-	font-family: Arial, sans-serif;
-	text-align: center;
-	/* Background image settings */
-	background: url('background.jpg') no-repeat center center fixed;
-	background-size: cover;
-  }
-  
-  .container {
-	max-width: 600px;
-	margin: 100px auto;
-	/* Slightly transparent to let the background show through */
-	background: rgba(255, 255, 255, 0.9);
-	padding: 20px;
-	border-radius: 8px;
-	box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  }
-  
-  .hidden {
-	display: none;
-  }
-  
-  #answer-input {
-	width: 80%;
-	padding: 8px;
-	margin-top: 10px;
-  }
-  
-  #submit-btn {
-	padding: 8px 16px;
-	margin-left: 10px;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  background: url('background.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.container {
+  max-width: 600px;
+  margin: 200px auto; /* lower window vertically */
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+#answer-input {
+  width: 80%;
+  padding: 10px;
+  margin: 15px auto;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  display: block;
+}
+
+button, #submit-btn {
+  background-color: #ff5a5f;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover, #submit-btn:hover {
+  background-color: #e14d4f;
+  transform: translateY(-2px);
+}
